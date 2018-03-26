@@ -5,3 +5,5 @@
 	wget -i utils/kitti_archives_to_download.txt -P ~/my/output/folder/
 	# 将目录下的图片从.jpg转换成.png
 	find ~/my/output/folder/ -name '*.png' | parallel 'convert {.}.png {.}.jpg && rm {}'
+	#using github
+	http://www.xitongzhijia.net/xtjc/20150320/42297.html
