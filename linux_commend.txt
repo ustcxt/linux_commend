@@ -1,0 +1,7 @@
+常用命令：
+	# 将本地服务器文件目录复制到远程服务器上
+	scp -r local_folder remote_username@remote_ip:remote_folder
+	#下载文件命令
+	wget -i utils/kitti_archives_to_download.txt -P ~/my/output/folder/
+	# 将目录下的图片从.jpg转换成.png
+	find ~/my/output/folder/ -name '*.png' | parallel 'convert {.}.png {.}.jpg && rm {}'
